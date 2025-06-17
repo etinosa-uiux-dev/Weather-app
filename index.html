@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video 
+    autoplay 
+    muted 
+    loop
+    preload="auto" 
+    class="background-video js-bg-video">
+        <source src="videos/default.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h1>Weather App</h1>
+    <div class="weather-details">
+        <div class="container">
+            <form class="weather-form js-weather-form">
+                <input type="search" placeholder="Enter a City or Country" 
+                class="city-input js-city-input">
+                <button type="submit" class="city-btn js-city-btn">OK!</button>
+            </form>
+
+            <div class="display-input js-display-input">
+                <!-- Nigeria -->
+            </div>
+        </div>
+
+        <div class="weather-results js-weather-results">
+            <!-- Weather Details -->🌥️
+        </div>
+    </div>
+
+    <div class="spinner js-spinner" style="display: none;">
+        <i class="fa-solid fa-spinner fa-spin fa-2x"></i>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
